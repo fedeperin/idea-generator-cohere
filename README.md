@@ -1,2 +1,2 @@
 # Idea Generator 💡
-An Idea Generator using CoHere for the Midudev CoHere Hackathon
+An Idea Generator using CoHere for midudev's CoHere Hackathon
