@@ -8,7 +8,7 @@ export const GET = async ({ url }) => {
     cohere.init(SECRET_COHERE_API_KEY)
 
     const cohereResponse = await cohere.generate({
-        model: 'medium',
+        model: 'xlarge',
         prompt: prompts[promptNumber],
         max_tokens: 60,
         temperature: 1,
