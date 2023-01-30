@@ -39,7 +39,7 @@
         background: #1095C1;
         color: #fff;
         border: none;
-        border-radius: 4px;
+        border-radius: 50px;
         cursor: pointer;
         width: 100%;
         margin-bottom: 20px;
@@ -58,13 +58,14 @@
         outline: 0;
         box-shadow: none;
         border: none;
-        background: #0c141a;
+        background: #323744;
         background-image: none;
         flex: 1;
-        padding: 0 .5em;
+        padding: 5px 15px;
         color: #fff;
         cursor: pointer;
-        font-size: 1em;
+        font-size: 20px;
+        border-radius: 50px;
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -76,7 +77,7 @@
         position: relative;
         display: flex;
         width: 100%;
-        height: 3em;
+        height: 54px;
         line-height: 3;
         overflow: hidden;
         border-radius: .25em;
@@ -87,7 +88,7 @@
         content: '\25BC';
         color: #141E26;
         position: absolute;
-        top: 0;
+        top: 3px;
         right: 0;
         padding: 0 1em;
         cursor: pointer;
