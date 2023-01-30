@@ -10,7 +10,7 @@ export const GET = async ({ url }) => {
     const cohereResponse = await cohere.generate({
         model: 'command-medium-nightly',
         prompt: prompts[promptNumber],
-        max_tokens: 60,
+        max_tokens: 70,
         temperature: 1,
         k: 0,
         p: 0.75,
@@ -21,9 +21,13 @@ export const GET = async ({ url }) => {
     })
     if(cohereResponse.body.generations) {
         const cohereResponseText = cohereResponse.body.generations[0].text
-        const formattedCohereResponse = cohereResponseText
+        const formattedCohereResponse = cohereResponseText.includes('-') ?
+        cohereResponseText
         .trim()
-        .substring(1, cohereResponseText.indexOf('-') - 8)
+        .substring(1, cohereResponseText.indexOf('-') - 8) 
+        : cohereResponseText
+        .replace('"', '')
+        .replace('"', '')
 
         return new Response(JSON.stringify({
             response: formattedCohereResponse
