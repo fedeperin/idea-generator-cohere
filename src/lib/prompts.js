@@ -16,8 +16,6 @@ export const prompts = [
     --\n
     Idea: "A web app that lets you find a good place to live in your area."\n
     --\n
-    Idea: "A tool that can generate ascii art in a terminal."\n
-    --\n
     Idea:`,
 
     // Mobile
