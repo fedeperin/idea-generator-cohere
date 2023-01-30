@@ -2,7 +2,7 @@
 
 export const prompts = [
     // Web
-    `Give an idea to a web developer that wants to start a start a web app project.\n
+    `Give an idea to a web developer that wants to start a web app project.\n
     --\n
     Idea: "A content site that helps you find useful information and also serves relevant ads."\n
     --\n
@@ -19,7 +19,7 @@ export const prompts = [
     Idea:`,
 
     // Mobile
-    `Give an idea to a mobile developer that wants to start a start a mobile app project.\n
+    `Give an idea to a mobile developer that wants to start a mobile app project.\n
     --\n
     Idea: "A mobile app that helps you find useful information and also serves relevant ads."\n
     --\n
