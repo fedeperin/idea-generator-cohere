@@ -46,7 +46,6 @@
         height: 54px;
         line-height: 3;
         overflow: hidden;
-        border-radius: .25em;
         margin-bottom: 20px;
     }
 
@@ -56,7 +55,7 @@
         position: absolute;
         top: 3px;
         right: 0;
-        padding: 0 1em;
+        padding: 0 20px;
         cursor: pointer;
         pointer-events: none;
         transition: .1s all ease;
