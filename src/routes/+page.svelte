@@ -31,4 +31,10 @@
     .container {
         width: 390px;
     }
+
+    @media (max-width: 400px) {
+        .container {
+            width: 90vw;
+        }
+    }
 </style>
