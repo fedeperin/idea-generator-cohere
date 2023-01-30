@@ -1,22 +1,9 @@
 <script>
-    import { cohereResponse } from '$lib/stores.js'
-
-    let disabled = false
-    let promptIndex = 0
-
-    const handleClick = async () => {
-        disabled = true
-        
-        const res = await fetch(`/generate?prompt=${ promptIndex }`)
-        const data = await res.json()
-        cohereResponse.set(data.response)
-
-        disabled = false
-    }
+    import { promptIndex } from '$lib/stores.js'
 
     const handleSelectChange = e => {
         const { selectedIndex } = e.target
-        promptIndex = selectedIndex
+        promptIndex.set(selectedIndex)
     }
 </script>
 
@@ -28,28 +15,7 @@
     </select>
 </div>
 
-<button disabled={ disabled } on:click={ handleClick }>
-    { disabled ? 'Generating Idea...' : 'Geneate Idea' }
-</button>
-
 <style>
-    button {
-        padding: 10px;
-        font-size: 30px;
-        background: #1095C1;
-        color: #fff;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    button:disabled {
-        opacity: 0.5;
-        cursor:not-allowed
-    }
-
     select {
         -webkit-appearance: none;
         -moz-appearance: none;

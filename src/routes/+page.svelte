@@ -1,6 +1,6 @@
 <script>
     import GithubCorner from '$lib/components/GithubCorner.svelte'
-    import GenerateForm from '$lib/components/GenerateForm.svelte'
+    import Form from '$lib/components/Form.svelte'
     import Response from '$lib/components/Response.svelte'
 </script>
 
@@ -10,7 +10,7 @@
     <h1 class="title">Idea Generator 💡</h1>
     <p class="subtitle">Using co:here</p>
 
-    <GenerateForm />
+    <Form />
     <Response />
 </div>
 
