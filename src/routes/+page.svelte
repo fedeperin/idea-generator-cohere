@@ -8,7 +8,7 @@
 
 <div class="container">
     <h1 class="title">Idea Generator 💡</h1>
-    <p class="subtitle">Project for <a href="https://github.com/midudev/midu-cohere-hackathon" target="_blank" rel="noreferrer">midudev's co:here hackathon</a></p>
+    <p class="subtitle">Using co:here</p>
 
     <GenerateForm />
     <Response />
@@ -25,10 +25,6 @@
     .subtitle {
         font-size: 15px;
         margin-bottom: 170px;
-        color: #525763;
-    }
-
-    .subtitle a {
         color: #525763;
     }
 
