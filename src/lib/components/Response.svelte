@@ -2,7 +2,7 @@
     import { cohereResponse } from '$lib/stores.js'
 </script>
 
-<p>{ $cohereResponse ? `Idea: ${ $cohereResponse }` : '' }</p>
+<p>{ $cohereResponse ? `${ $cohereResponse }` : '' }</p>
 
 <style>
     p {

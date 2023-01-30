@@ -30,11 +30,11 @@ export const GET = async ({ url }) => {
         .replace('"', '')
 
         return new Response(JSON.stringify({
-            response: formattedCohereResponse
+            response: `Idea: ${ formattedCohereResponse }`
         }), { status: 200 })
     }else {
         return new Response(JSON.stringify({
-            response: 'Too many requests to the server. Please try again later.'
+            response: 'Too many requests to co:here. Please try again later.'
         }), { status: 429 })
     }
 }
