@@ -7,7 +7,7 @@ export const GET = async ({ url }) => {
 
     cohere.init(SECRET_COHERE_API_KEY)
 
-    const cohereResponse = await cohere.generate({
+    const cohereGenerated = await cohere.generate({
         model: 'command-medium-nightly',
         prompt: prompts[promptNumber],
         max_tokens: 70,
@@ -19,8 +19,9 @@ export const GET = async ({ url }) => {
         stop_sequences: [],
         return_likelihoods: 'NONE'
     })
-    if(cohereResponse.body.generations) {
-        const cohereResponseText = cohereResponse.body.generations[0].text
+    
+    if(cohereGenerated.body.generations) {
+        const cohereResponseText = cohereGenerated.body.generations[0].text
         const formattedCohereResponse = cohereResponseText.includes('-') ?
         cohereResponseText
         .trim()
