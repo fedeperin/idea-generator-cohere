@@ -25,7 +25,7 @@
         cursor: not-allowed;
     }
 
-    button:hover {
+    button:hover:not([disabled]) {
         opacity: 0.7;
     }
 </style>
