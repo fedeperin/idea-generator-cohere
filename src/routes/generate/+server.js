@@ -11,7 +11,7 @@ export const GET = async ({ url }) => {
         model: 'command-medium-nightly',
         prompt: prompts[promptNumber],
         max_tokens: 70,
-        temperature: 1,
+        temperature: 1.5,
         k: 0,
         p: 0.75,
         frequency_penalty: 0,
