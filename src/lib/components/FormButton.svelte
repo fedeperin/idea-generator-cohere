@@ -17,10 +17,15 @@
         cursor: pointer;
         width: 100%;
         margin-bottom: 20px;
+        transition: opacity .3s ease;
     }
 
     button:disabled {
         opacity: 0.5;
-        cursor:not-allowed
+        cursor: not-allowed;
+    }
+
+    button:hover {
+        opacity: 0.7;
     }
 </style>
