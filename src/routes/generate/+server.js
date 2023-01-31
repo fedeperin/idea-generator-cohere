@@ -19,16 +19,13 @@ export const GET = async ({ url }) => {
         stop_sequences: [],
         return_likelihoods: 'NONE'
     })
-    
+
     if(cohereGenerated.body.generations) {
         const cohereResponseText = cohereGenerated.body.generations[0].text
-        const formattedCohereResponse = cohereResponseText.includes('-') ?
-        cohereResponseText
+
+        const formattedCohereResponse = cohereResponseText
         .trim()
-        .substring(1, cohereResponseText.indexOf('-') - 8) 
-        : cohereResponseText
-        .replace('"', '')
-        .replace('"', '')
+        .substring(1, cohereResponseText.indexOf('"', 2) - 1) 
 
         return new Response(JSON.stringify({
             response: `Idea: ${ formattedCohereResponse }`
