@@ -11,6 +11,8 @@
     <select on:change={ handleSelectChange }>
         <option value="web">Web App</option>
         <option value="mobile">Mobile App</option>
+        <option value="terminal">2D Game</option>
+        <option value="terminal">3D Game</option>
         <option value="terminal">Terminal Script</option>
     </select>
 </div>

@@ -35,6 +35,44 @@ export const prompts = [
     --\n
     Idea:`,
 
+    // 2D Game
+    `Give an idea to a game developer that wants to start a 2D game.\n
+    --\n
+    Idea: "Stardew Valley but with dinasaurs."
+    --\n
+    Idea: "A platform game where you have to shoot targets in the sky."
+    --\n
+    Idea: "A strategy game where you have to build your own army and battle against other players."
+    --\n
+    Idea: "A simulation game where you have to grow crops and take care of animals."
+    --\n
+    Idea: "A city builder game where you have to grow and expand your city."
+    --\n
+    Idea: "A fighting game where you have to fight against other players using weapons and magic."
+    --\n
+    Idea:`,
+
+    // 3D Game
+    `Give an idea to a game developer that wants to start a 3D game.\n
+    --\n
+    Idea: "Pac-Man but in 3D."
+    --\n
+    Idea: "A shooter game but in second person in 3D."
+    --\n
+    Idea: "A multiplayer party simulator in 3D."
+    --\n
+    Idea: "A game where you can design and create your own levels in 3D."
+    --\n
+    Idea: "A platform game where you must navigate through obstacles in 3D space."
+    --\n
+    Idea: "A 3D version of Spacewar."
+    --\n
+    Idea: "A city builder game where you have to grow and expand your city."
+    --\n
+    Idea: "A 3D version of Civilization."
+    --\n
+    Idea:`,
+
     // Terminal
     `Give an idea to a developer that wants to program a terminal script.\n
     --\n
