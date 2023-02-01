@@ -7,7 +7,9 @@
     }
 </script>
 
-<div class="select">
+<label for="select">Category:</label>
+
+<div class="select" id="select">
     <select on:change={ handleSelectChange }>
         <option value="web">Web App</option>
         <option value="mobile">Mobile App</option>
@@ -18,6 +20,11 @@
 </div>
 
 <style>
+    label {
+        color: #eee;
+        font-size: 18px;
+    }
+
     select {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -49,6 +56,7 @@
         line-height: 3;
         overflow: hidden;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .select::after {

@@ -11,7 +11,7 @@
     
     .subtitle {
         font-size: 15px;
-        margin-bottom: 170px;
+        margin-bottom: 150px;
         color: #525763;
     }
 

@@ -3,6 +3,7 @@ import { SECRET_COHERE_API_KEY } from '$env/static/private'
 import { prompts } from '$lib/prompts.js'
 
 export const GET = async ({ url }) => {
+    const randomness = url.searchParams.get('randomness') ?? 1.5
     const promptNumber = url.searchParams.get('prompt') ?? 0
 
     cohere.init(SECRET_COHERE_API_KEY)
@@ -11,7 +12,7 @@ export const GET = async ({ url }) => {
         model: 'command-medium-nightly',
         prompt: prompts[promptNumber],
         max_tokens: 70,
-        temperature: 1.5,
+        temperature: parseFloat(randomness),
         k: 0,
         p: 0.75,
         frequency_penalty: 0,
