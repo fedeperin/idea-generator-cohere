@@ -1,0 +1,23 @@
+<h1 class="title">Idea Generator 💡</h1>
+<p class="subtitle">Using co:here</p>
+
+<style>
+    .title {
+        margin-top: 90px;
+        margin-bottom: 15px;
+        color: #C6CDDC;
+        font-size: 34px;
+    }
+    
+    .subtitle {
+        font-size: 15px;
+        margin-bottom: 170px;
+        color: #525763;
+    }
+
+    @media (max-height: 800px) {
+        .subtitle {
+            margin-bottom: 100px;
+        }
+    }
+</style>
