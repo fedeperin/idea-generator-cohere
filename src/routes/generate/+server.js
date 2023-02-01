@@ -1,6 +1,10 @@
 import cohere from 'cohere-ai'
-import { SECRET_COHERE_API_KEY } from '$env/static/private'
+import dotenv from 'dotenv'
+dotenv.config()
+
 import { prompts } from '$lib/prompts.js'
+
+const { SECRET_COHERE_API_KEY } = process.env
 
 export const GET = async ({ url }) => {
     const randomness = url.searchParams.get('randomness') ?? 1.5
