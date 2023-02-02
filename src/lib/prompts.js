@@ -29,9 +29,9 @@ export const prompts = [
     --\n
     Idea: "A mobile app that connects struggling students with local people who can help them."\n
     --\n
-    Idea: "A mobile app that helps you find a place to eat lunch at work."\n
+    Idea: "A mobile app that connects local businesses with local customers."\n
     --\n
-    Idea: "A mobile app that lets you find a good place to live in your area."\n
+    Idea: "A mobile app that helps people find good used books in their area."\n
     --\n
     Idea:`,
 
