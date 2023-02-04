@@ -13,7 +13,7 @@
             prompt: $promptIndex
         })
 
-        const res = await fetch(`/generate?${ params }`)
+        const res = await fetch(`/api/generate?${ params }`)
         const data = await res.json()
         cohereResponse.set(data.response)
 
